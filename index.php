@@ -2,7 +2,7 @@
 // This script is part of the WHMCS Azuracast module - https://marketplace.whmcs.com/product/7150-azuracast-provisioning-module
 error_reporting(0);
 
-$baseUrl = "https://yourazuracastdomain.com/api"; // Base API URL Azuracast
+$baseUrl = "https://your-azuracast-url.com/api"; // Base API URL Azuracast
 $apiKey = "your_azuracast_api_key"; // API Key Azuracast
 
 function getApiData($endpoint, $apiKey) {
@@ -25,7 +25,7 @@ function getApiData($endpoint, $apiKey) {
 }
 
 $cpuData = getApiData("$baseUrl/admin/server/stats", $apiKey);
-$cpuLoadAvg = isset($cpuData['cpu']['load'][0]) ? number_format($cpuData['cpu']['load'][0], 2) : "N/A"; // Load médio de 1 min arredondado
+$cpuLoadAvg = isset($cpuData['cpu']['load'][0]) ? number_format($cpuData['cpu']['load'][0], 2) : "N/A";
 $uptime = "N/A";
 
 header("Content-Type: text/xml");
