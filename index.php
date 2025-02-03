@@ -1,3 +1,5 @@
+// This script is part of the WHMCS Azuracast module - https://marketplace.whmcs.com/product/7150-azuracast-provisioning-module
+
 <?php
 error_reporting(0);
 
