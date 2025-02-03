@@ -1,6 +1,5 @@
-// This script is part of the WHMCS Azuracast module - https://marketplace.whmcs.com/product/7150-azuracast-provisioning-module
-
 <?php
+// This script is part of the WHMCS Azuracast module - https://marketplace.whmcs.com/product/7150-azuracast-provisioning-module
 error_reporting(0);
 
 $baseUrl = "https://yourazuracastdomain.com/api"; // Base API URL Azuracast
